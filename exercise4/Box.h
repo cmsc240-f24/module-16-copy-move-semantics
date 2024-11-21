@@ -7,11 +7,11 @@ public:
     // Constructor
     Box(int value);
 
-    // Move Constructor (to be implemented by the student in Box.cpp)
-    Box(Box&& other) noexcept;
-
     // Destructor
     ~Box();
+
+    // Move Assignment Operator (to be implemented by the student in Box.cpp)
+    Box& operator=(Box&& other) noexcept;
 
     // Print the value of the box
     void print() const;

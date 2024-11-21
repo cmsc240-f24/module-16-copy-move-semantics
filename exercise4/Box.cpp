@@ -9,19 +9,18 @@ Box::Box(int val)
     value = new int(val);
 }
 
-// Move Constructor
-
-// ***** YOUR CODE GOES HERE ****** 
-
-
-
-
 // Destructor
 Box::~Box() 
 {
     // Release the dynamically allocated memory
     delete value; 
 }
+
+// Move Assignment Operator
+
+// ***** YOUR CODE GOES HERE ****** 
+
+
 
 // Print the value of the box
 void Box::print() const 
